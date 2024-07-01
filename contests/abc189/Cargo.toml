@@ -1,0 +1,187 @@
+[package]
+name = "abc189"
+version = "0.1.0"
+edition = "2018"
+
+[package.metadata.cargo-compete.bin]
+abc189-a = { alias = "a", problem = "https://atcoder.jp/contests/abc189/tasks/abc189_a" }
+abc189-b = { alias = "b", problem = "https://atcoder.jp/contests/abc189/tasks/abc189_b" }
+
+[[bin]]
+name = "abc189-a"
+path = "src/bin/a.rs"
+
+[[bin]]
+name = "abc189-b"
+path = "src/bin/b.rs"
+
+[dependencies]
+# AtCoder 2023年1月言語アップデート以降に使用できるクレート。
+# 次のページに各クレートについての細かい紹介があります。
+# https://github.com/rust-lang-ja/atcoder-rust-resources/wiki/Jan-2023-Language-Update-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E6%A1%88
+# [atcoder rust available crates list](https://img.atcoder.jp/file/language-update/language-list.html)
+
+# 本家 AC(AtCoder) Library の、コミュニティによる Rust 移植版。
+ac-library-rs = "=0.1.1"
+
+# staticアイテムの遅延初期化。lazy_static より新しい
+once_cell = "=1.18.0"
+
+# コンパイル時 assert
+static_assertions = "=1.1.0"
+
+# SAT ソルバー
+varisat = "=0.2.2"
+
+# メモ化ライブラリ
+memoise = "=0.3.2"
+
+# 競技プログラミングの入出力サポートその4
+argio = "=0.2.0"
+
+# 可変長 bitset その3
+bitvec = "=1.0.1"
+
+# Python の `collections.Counter` にあたる
+counter = "=0.5.7"
+
+# C++ の `std::unordered_multiset` にあたる
+hashbag = "=0.1.11"
+
+# グラフライブラリその2
+pathfinding = "=4.3.0"
+
+# 自己再帰
+recur-fn = "=2.2.0"
+
+# 添字アクセスを安全に
+indexing = { version = "=0.4.1", features = ["experimental_pointer_ranges"] }
+
+# ちょっと便利な型と derive の詰め合わせ
+amplify = { version = "=3.14.2", features = ["c_raw", "rand", "stringly_conversions"] }
+amplify_derive = "=2.11.3"
+amplify_num = { version = "=0.4.1", features = ["std"] }
+
+# extension trait parttern のショートハンド
+easy-ext = "=1.0.1"
+
+# C++ の `std::unordered_multimap` にあたる
+multimap = "=0.9.0"
+
+# C++ の `std::multimap` にあたる
+btreemultimap = "=0.1.1"
+
+# ASCII 文字列ライブラリその2
+bstr = "=1.6.0"
+
+# プリミティブ整数の安全な型変換
+az = "=1.2.1"
+
+# 高速な sort
+glidesort = "=0.1.2"
+
+# メソッドチェーン記法の支援
+tap = "=1.0.1"
+
+# swap
+omniswap = "=0.1.0"
+
+# 関数をアーキテクチャごとにコンパイル
+multiversion = "=0.7.2"
+
+# 以下は AtCoder 2019年言語アップデートで既に追加されていたクレート。
+# 2023年1月言語アップデート時点での最新版にアップグレードされています。
+
+# 数値型の抽象化、多倍長整数、複素数、分数、及び整数型の拡張
+num = "=0.4.1"
+num-bigint = "=0.4.3"
+num-complex = "=0.4.3"
+num-integer = "=0.1.45"
+num-iter = "=0.1.43"
+num-rational = "=0.4.1"
+num-traits = "=0.2.15"
+# `num-traits`の自動実装
+num-derive = "=0.4.0"
+
+# NumPyの`ndarray`のような多次元配列
+ndarray = "=0.15.6"
+
+# 線形代数
+nalgebra = "=0.32.3"
+
+# (線形)代数の抽象化
+alga = "=0.9.3"
+
+# libmのRust実装
+libm = "=0.2.7"
+
+# 乱数
+rand = { version = "=0.8.5", features = ["small_rng", "min_const_gen"] }
+getrandom = "=0.2.10"
+rand_chacha = "=0.3.1"
+rand_core = "=0.6.4"
+rand_hc = "=0.3.2"
+rand_pcg = "=0.3.1"
+# 乱数の分布の追加
+rand_distr = "=0.4.3"
+
+# グラフライブラリその1
+petgraph = "=0.6.3"
+
+# 挿入順を保持するhash table
+indexmap = "=2.0.0"
+
+# 正規表現
+regex = "=1.9.1"
+
+# staticアイテムの遅延初期化ライブラリその1
+lazy_static = "=1.4.0"
+
+# `NotNan<f64>`, `OrderedFloat<f64>`
+ordered-float = "=3.7.0"
+
+# ASCII文字列ライブラリその1
+ascii = "=1.1.0"
+
+# permutation
+permutohedron = "=0.2.4"
+
+# スライスの拡張
+superslice = "=1.0.0"
+
+# イテレータの拡張
+itertools = "=0.11.0"
+
+# イテレータの拡張（一次元累積和と浮動小数点数の等差数列）
+itertools-num = "=0.1.3"
+
+# `BTreeMap`, `BTreeSet`, `HashMap`, `HashSet`のリテラル用マクロ
+maplit = "=1.0.2"
+
+# 即席enum `Either<L, R>`
+either = "=1.8.1"
+
+# `BTreeMap`, `BTreeSet`, `HashMap`, `HashSet`, `Vec`の永続データ構造版
+im-rc = "=15.1.0"
+
+# 可変長 bitset その1
+fixedbitset = "=0.4.2"
+
+# 可変長 bitset その2
+bitset-fixed = "=0.1.0"
+
+# 競技プログラミングの入出力サポートその1
+proconio = { version = "=0.4.5", features = ["derive"] }
+
+# 競技プログラミングの入出力サポートその2
+text_io = "=0.1.12"
+
+# 「競技プログラミングの入出力サポートその3」はwhitereadでしたが、ライセンスの都合により削除され欠番
+
+# 高速なハッシュ関数
+rustc-hash = "=1.1.0"
+
+# ある長さまでは要素を「直に」持つ可変長配列
+smallvec = { version = "=1.11.0", features = ["const_generics", "const_new", "write", "union", "serde", "arbitrary"] }
+
+[dev-dependencies]
