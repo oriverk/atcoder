@@ -30,3 +30,4 @@ cargo compete test [a-g]
 - [abc360](/contests/abc360)
 - [abc360](/contests/abc360)
 - [abc189](/contests/abc189)
+- [abc001](/contests/abc001)

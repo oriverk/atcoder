@@ -1,39 +1,29 @@
 [package]
-name = "abc189"
+name = "abc001"
 version = "0.1.0"
 edition = "2018"
 
 [package.metadata.cargo-compete.bin]
-abc189-a = { alias = "a", problem = "https://atcoder.jp/contests/abc189/tasks/abc189_a" }
-abc189-b = { alias = "b", problem = "https://atcoder.jp/contests/abc189/tasks/abc189_b" }
-abc189-c = { alias = "c", problem = "https://atcoder.jp/contests/abc189/tasks/abc189_c" }
-abc189-d = { alias = "d", problem = "https://atcoder.jp/contests/abc189/tasks/abc189_d" }
-abc189-e = { alias = "e", problem = "https://atcoder.jp/contests/abc189/tasks/abc189_e" }
-abc189-f = { alias = "f", problem = "https://atcoder.jp/contests/abc189/tasks/abc189_f" }
+abc001-a = { alias = "a", problem = "https://atcoder.jp/contests/abc001/tasks/abc001_1" }
+abc001-b = { alias = "b", problem = "https://atcoder.jp/contests/abc001/tasks/abc001_2" }
+abc001-c = { alias = "c", problem = "https://atcoder.jp/contests/abc001/tasks/abc001_3" }
+abc001-d = { alias = "d", problem = "https://atcoder.jp/contests/abc001/tasks/abc001_4" }
 
 [[bin]]
-name = "abc189-a"
+name = "abc001-a"
 path = "src/bin/a.rs"
 
 [[bin]]
-name = "abc189-b"
+name = "abc001-b"
 path = "src/bin/b.rs"
 
 [[bin]]
-name = "abc189-c"
+name = "abc001-c"
 path = "src/bin/c.rs"
 
 [[bin]]
-name = "abc189-d"
+name = "abc001-d"
 path = "src/bin/d.rs"
-
-[[bin]]
-name = "abc189-e"
-path = "src/bin/e.rs"
-
-[[bin]]
-name = "abc189-f"
-path = "src/bin/f.rs"
 
 [dependencies]
 # AtCoder 2023年1月言語アップデート以降に使用できるクレート。
